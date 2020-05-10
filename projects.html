@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conor Bailey</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="noise"></div>
+      <div class="cover"></div>
+      <div class="logo">
+        <a href="#">Conor Bailey</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a class="nav-link" href="/index.html">Home</a></li>
+          <li><a class="nav-link" href="/about.html">About</a></li>
+          <li><a class="nav-link" href="/projects.html">Projects</a></li>
+          <li><a class="nav-link" href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="projects-container">
+      <h1 class="projects-title">PROJECTS</h1>
+
+      <div class="project-one">
+        <h2>Company Analysis Tool</h2>
+        <h5>
+          Built With: Node JS, Express JS, Postgresql, Puppeteer, HTML, CSS,
+          Vanilla JavaScript
+        </h5>
+        <div class="p-desc">
+          <p>
+            The Company Analysis Tool was built to assist with AML (Anti Money
+            Laundering) investgations. The app makes use of the Puppeteer web
+            scraping technology as well as multiple third party API's (Open
+            Corporates / DueDil) to gather company information. All gathered
+            company details are then stored in the Postgresql database. The
+            application also implements the News API to retrieve up to date news
+            articles in the financial crime space. Local strategy user
+            authentication has also been implemented with registered user
+            details and secure hashed passwords stored in the Postgresql
+            database.
+          </p>
+        </div>
+        <div class="p-links">
+          <i class="fas fa-globe"></i>
+          <i class="fab fa-github"></i>
+        </div>
+      </div>
+
+      <div class="project-two">
+        <h2>Blog</h2>
+        <h5>
+          Built With: Python (Django), Django Rest Framework, React, JavaScript,
+          Postgresql
+        </h5>
+        <div class="p-desc">
+          <p>
+            My personal blog was built using Django. Django was used to create
+            database blog 'Post' model and the Django Rest Framework was used to
+            serialize the database entries into JSON format. All blog post
+            entries are stored in a Postgresql database. This website is built
+            with React which interacts with this Django API and serves the
+            stored blog post's in the React front end. The blog posts can be
+            viewed on the Home page of this website and the API JSON end points
+            can be viewed by clicking the link to the right. The API requires
+            user authentication in order to allow POST, PUT and DELETE requests.
+            JSON endpoints are made as read only to unauthenticated users.
+          </p>
+        </div>
+        <div class="p-links">
+          <i class="fas fa-globe"></i>
+          <i class="fab fa-github"></i>
+        </div>
+      </div>
+
+      <div class="project-three">
+        <h2>Item Catalogue</h2>
+        <h5>
+          Built With: Python (Flask), HTML, CSS, JavaScript
+        </h5>
+        <div class="p-desc">
+          <p>
+            This project was built as part of the Udacity Full Stack Web
+            Developer Nanodegree Course. This is a CRUD which is used to store
+            music production item details. This web application was built using
+            Python / Flask and an SQL database. Google Oauth 2 authentication
+            has been implemented.
+          </p>
+        </div>
+        <div class="p-links">
+          <i class="fas fa-globe"></i>
+          <i class="fab fa-github"></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="proj-two"></section>
+
+    <div class="image-break">
+      <div class="break-cover"></div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-cover">
+        <div class="copyright">© Conor Bailey</div>
+        <div class="footer-socials">
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-github"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/7577eba8ec.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
