@@ -3,11 +3,10 @@ const header = document.querySelector(".header");
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    header.classList.remove("scroll");
-  } else {
-    header.classList.add("scroll");
-  }
+  prevScrollpos > currentScrollPos
+    ? header.classList.remove("scroll")
+    : header.classList.add("scroll");
+
   prevScrollpos = currentScrollPos;
 };
 
@@ -75,8 +74,6 @@ function mapBlogPosts() {
       image.src = blogPosts[i].image_source;
       postDiv.appendChild(image);
     }
-
-    postDiv.onclick = () => alert("nigger");
     postId++;
   }
 }
