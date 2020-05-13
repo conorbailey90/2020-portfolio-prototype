@@ -11,13 +11,15 @@
     <title>Conor Bailey</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header scroll">
       <div class="noise"></div>
       <div class="cover"></div>
       <div class="logo">
         <a href="#">Conor Bailey</a>
       </div>
-      <nav>
+      <div class="menu-toggle">MENU</div>
+
+      <nav class="main-nav">
         <ul>
           <li><a class="nav-link" href="/index.html">Home</a></li>
           <li><a class="nav-link" href="/about.html">About</a></li>
@@ -26,6 +28,15 @@
         </ul>
       </nav>
     </header>
+    <div class="mobile-nav">
+      <div class="close-menu">CLOSE</div>
+      <ul>
+        <li><a class="nav-link" href="/index.html">Home</a></li>
+        <li><a class="nav-link" href="/about.html">About</a></li>
+        <li><a class="nav-link" href="/projects.html">Projects</a></li>
+        <li><a class="nav-link" href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
     <section class="container">
       <h1 class="projects-title">CONTACT ME</h1>
       <div class="contact">
@@ -61,10 +72,26 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     <script
       src="https://kit.fontawesome.com/7577eba8ec.js"
       crossorigin="anonymous"
     ></script>
     <script src="app.js"></script>
+    <script>
+      gsap.from(".projects-title", { y: 50, opacity: 0, duration: 1 });
+      gsap.from(".contact", {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        delay: 0.5,
+      });
+      gsap.from(".contact-socials", {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        delay: 0.7,
+      });
+    </script>
   </body>
 </html>

@@ -11,13 +11,15 @@
     <title>Conor Bailey</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header scroll">
       <div class="noise"></div>
       <div class="cover"></div>
       <div class="logo">
         <a href="#">Conor Bailey</a>
       </div>
-      <nav>
+      <div class="menu-toggle">MENU</div>
+
+      <nav class="main-nav">
         <ul>
           <li><a class="nav-link" href="/index.html">Home</a></li>
           <li><a class="nav-link" href="/about.html">About</a></li>
@@ -26,6 +28,15 @@
         </ul>
       </nav>
     </header>
+    <div class="mobile-nav">
+      <div class="close-menu">CLOSE</div>
+      <ul>
+        <li><a class="nav-link" href="/index.html">Home</a></li>
+        <li><a class="nav-link" href="/about.html">About</a></li>
+        <li><a class="nav-link" href="/projects.html">Projects</a></li>
+        <li><a class="nav-link" href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
     <section class="projects-container">
       <h1 class="projects-title">PROJECTS</h1>
 
@@ -49,7 +60,7 @@
             database.
           </p>
         </div>
-        <div class="p-links">
+        <div class="p-links-one">
           <i class="fas fa-globe"></i>
           <i class="fab fa-github"></i>
         </div>
@@ -75,7 +86,7 @@
             JSON endpoints are made as read only to unauthenticated users.
           </p>
         </div>
-        <div class="p-links">
+        <div class="p-links-two">
           <i class="fas fa-globe"></i>
           <i class="fab fa-github"></i>
         </div>
@@ -95,7 +106,7 @@
             has been implemented.
           </p>
         </div>
-        <div class="p-links">
+        <div class="p-links-three">
           <i class="fas fa-globe"></i>
           <i class="fab fa-github"></i>
         </div>
@@ -120,10 +131,33 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
     <script
       src="https://kit.fontawesome.com/7577eba8ec.js"
       crossorigin="anonymous"
     ></script>
     <script src="app.js"></script>
+
+    <script>
+      gsap.from(".projects-title", { y: 50, opacity: 0, duration: 1 });
+      gsap.from(".project-one", {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        delay: 0.5,
+      });
+      gsap.from(".project-two", {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        delay: 0.7,
+      });
+      gsap.from(".project-three", {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        delay: 0.9,
+      });
+    </script>
   </body>
 </html>
